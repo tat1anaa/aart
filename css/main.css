@@ -154,7 +154,7 @@ header.fixed #logo {
 #main embed{
     margin-top: 2cm;
     float:left;
-    margin-left: 20%;
+    width:center;
 }
 @media (min-width: 1401px) {
   #main {
@@ -207,7 +207,6 @@ header.fixed #logo {
     width:100%;
     float:left;
   max-width: 500px;
-  margin-left: 10cm;
   background-color: #fff;
 
 
