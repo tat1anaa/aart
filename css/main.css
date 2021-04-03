@@ -153,8 +153,7 @@ header.fixed #logo {
 
 #main embed{
     margin-top: 2cm;
-    float:left;
-    width:center;
+    float:center;
 }
 @media (min-width: 1401px) {
   #main {
@@ -204,9 +203,7 @@ header.fixed #logo {
 
 #Pictures video{
     margin-top: 2cm;
-    width:100%;
-    float:left;
-  max-width: 500px;
+    float:center;
   background-color: #fff;
 
 
