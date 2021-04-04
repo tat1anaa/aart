@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Art</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Art</span>
+    </div>
+    <div id="about">
+      <a href="#" title="About" onclick="slowScroll('#main')"> About </a>
+      <a href="#" onclick="slowScroll('#Pictures')" title="Pictures">Pictures </a>
+      <a href="#" onclick="slowScroll('#Contacts')" title="Contacts"> Contacts </a>
+    </div>
+  </header>
+  <div id="top">
+      <h1> Everything you can imagine is real </h1>
+      
+  </div>
+
+  <div id="main">
+      <div class="intro">
+          <h2>Art is long, life is short. </h2>
+          <span> Every artist dips his brush in his own soul and paints his own nature into his pictures. </span>
+      </div>
+      <div class="text">
+          <span>There is no generally agreed definition of what constitutes art, and ideas have changed over time. The three classical branches of visual art are painting, sculpture, and architecture.Theatre, dance, and other performing arts, as well as literature, music, film and other media such as interactive media, are included in a broader definition of the arts. Until the 17th century, art referred to any skill or mastery and was not differentiated from crafts or sciences. </span>
+        </div>
+        <div class="embed">
+        <embed src="css/art.pdf" >
+        </div>
+
+  </div>
+  <div id="Pictures">
+      <h2>Pictures</h2>
+
+      <div class="img">
+          <img src="css/css/images/pictr2.jpg" >
+          
+      </div>
+      <div class ="img">
+          <img src="css/css/images/pictr3.jpg">
+          
+
+      </div>
+
+      <div class="img">
+          <img src="css/css/images/pictr5.jpg">
+      </div>
+
+      <div class="img">
+          <img src="css/css/images/pictr7.jpg">
+      </div>
+      <div class="video">
+        <video width="640" height="480" controls="controls" src="css/css/images/IMG_8438.MP4"></video>
+      </div>
+      
+      
+      </div>
+  </div>
+
+  <div id="Contacts">
+    <center><h5> Feedback </h5></center>
+    <form id="form_input">
+      <label for="name">Name <span>*</span></label><br>
+      <input type="text"placeholder="Enter your name" name="name" id="name"><br>
+      <label for="email">Your mail<span>*</span></label><br>
+      <input type="email" placeholder="Email" name="email" id="email"><br>
+      <label for="message">Message <span>*</span></label><br>
+      <textarea placeholder="Leave us a message" name="message" id="message"></textarea><br>
+      <div id="mess_send" class="btn">Sent</div>
+    </form>
+  </div>
+
+  
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+
+        </script>
+    </body>
+</html>
